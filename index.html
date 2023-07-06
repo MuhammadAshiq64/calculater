@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6Calculater</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contaner">
+        <div class="calculater">
+            <div class="display">
+                <input type="text" id="displayvalve" disabled>
+            </div>
+
+            <div>
+
+                <div class="bttndiv">
+
+
+                    <div>
+                        <button class="othercolor" onclick="displayvalve.value=''">AC</button>
+                        <button class="othercolor"
+                            onclick="displayvalve.value = displayvalve.value.toString().slice(0,-1)">D</button>
+                        <button class="othercolor" onclick="displayvalve.value +='.'">.</button>
+                        <button class="othercolor" onclick="displayvalve.value +='/'">/</button>
+                    </div>
+                    <div>
+                        <button onclick="displayvalve.value +='7'">7</button>
+                        <button onclick="displayvalve.value +='8'">8</button>
+                        <button onclick="displayvalve.value +='9'">9</button>
+                        <button class="othercolor" onclick="displayvalve.value +='*'">*</button>
+                    </div>
+                    <div>
+                        <button onclick="displayvalve.value +='4'">4</button>
+                        <button onclick="displayvalve.value +='5'">5</button>
+                        <button onclick="displayvalve.value +='6'">6</button>
+                        <button class="othercolor" onclick="displayvalve.value +='-'">-</button>
+                    </div>
+                    <div>
+                        <button onclick="displayvalve.value +='1'">1</button>
+                        <button onclick="displayvalve.value +='2'">2</button>
+                        <button onclick="displayvalve.value +='3'">3</button>
+                        <button class="othercolor" onclick="displayvalve.value +='+'">+</button>
+                    </div>
+                    <div>
+                        <button onclick="displayvalve.value +='00'">00</button>
+                        <button onclick="displayvalve.value +='0'">0</button>
+                        <button class="eql" onclick="displayvalve.value = eval(displayvalve.value)">=</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+</body>
+</html>
